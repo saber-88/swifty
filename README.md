@@ -59,7 +59,7 @@ cd swifty
 ./swifty
 ```
 ---
-##🧩 Hyprland Keybind Setup
+## 🧩 Hyprland Keybind Setup
 > Add this to your hyprland.conf
 ```bash
 bind = $mainMod+Shift, S, exec, pkill -x swifty || <path/to/swifty-binary>
@@ -68,5 +68,5 @@ bind = $mainMod+Shift, S, exec, pkill -x swifty || <path/to/swifty-binary>
 > You will also need to set windowrules as per your prefrence.
 
 ---
-##🙌 Credits
+## 🙌 Credits
 > Original work by [RyuZinOh](https://github.com/RyuZinOh)
