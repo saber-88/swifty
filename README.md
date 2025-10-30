@@ -3,7 +3,7 @@
 A lightweight and visually appealing **wallpaper selection menu** built for **Hyprland** (or other Wayland compositors).  
 This tool allows you to **preview and apply wallpapers quickly** through a minimal popup interface.
 
-> ⚙️ Built using **C++** and **Qt**, the original design and logic is from [ashborns dotfiles](https://github.com/RyuZinOh/.dotfiles).
+> ⚙️ Built using **C++** and **Qt**, the original design and logic is from [RyuZinOh's dotfiles](https://github.com/RyuZinOh/.dotfiles).
 
 ---
 
@@ -56,3 +56,16 @@ sudo pacman -S qt5-base qt5-tools swww make gcc pkgconf
 git clone https://github.com/<your-username>/swifty.git
 cd swifty
 ./swifty
+```
+---
+##🧩 Hyprland Keybind Setup
+> Add this to your hyprland.conf
+```bash
+bind = $mainMod+Shift, S, exec, pkill -x swifty || <path/to/swifty-binary>
+```
+> Make sure you add `pkill -x swifty` otherwise the swifty will always run as background process.
+> You will also need to set windowrules as per your prefrence.
+
+---
+##🙌 Credits
+> Original work by [RyuZinOh](https://github.com/RyuZinOh)
