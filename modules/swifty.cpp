@@ -211,7 +211,7 @@ void Swifty::loadWallpapers() {
 
 void Swifty::applyWallpaper(const QString &path) {
   QString wallpaperName = QFileInfo(path).completeBaseName();
-  QProcess::startDetached("notify-send", {wallpaperName + " Applied!"});
+  QProcess::startDetached("notify-send", QStringList() << "-t" << "1200" << (wallpaperName + " Applied!"));
   QStringList arguments;
   arguments << "img" << path << "--transition-type" << "wipe"
             << "--transition-duration" << "1.5";
