@@ -18,8 +18,9 @@ This tool allows you to **preview and apply wallpapers quickly** through a minim
 ---
 
 ### 🧭 Preview
+
 https://github.com/user-attachments/assets/528bc0b8-c3fb-4ad6-a5a9-67bd622e12d1
-![Wallpaper Menu Preview](assets/preview.png)
+
 
 
 
