@@ -58,6 +58,7 @@ git clone https://github.com/<your-username>/swifty.git
 cd swifty
 ./swifty
 ```
+You can also directly download binary if you dont want to clone the repository.
 ---
 ## 🧩 Hyprland Keybind Setup
 > Add this to your hyprland.conf

@@ -217,13 +217,5 @@ void Swifty::applyWallpaper(const QString &path) {
             << "--transition-duration" << "1.5";
   QProcess::startDetached("swww", arguments);
 
-  QString hyprlockDir = "/home/safal726/.cache/hyprlock-safal";
-  QDir dir(hyprlockDir);
-  if (!dir.exists())
-    dir.mkpath(".");
-  QString finalPath = hyprlockDir + "/bg.jpg";
-  QImage img(path);
-  if (!img.isNull())
-    img.save(finalPath, "JPG");
  QGuiApplication::exit(0);
 }
