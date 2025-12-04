@@ -35,10 +35,12 @@ Make sure you have the following installed before building:
 | **swww** | Wallpaper daemon for Wayland/Hyprland |
 | **make / g++** | For building and linking |
 | **pkg-config** | To detect dependencies |
+| **qt5-wayland**| For wayland support |
+| **qt6-wayland**| For wayland support |
 
 ### 🧩 On Arch-based systems:
 ```bash
-sudo pacman -S qt5-base qt5-tools swww make gcc pkgconf
+sudo pacman -S qt5-base qt5-tools swww make gcc pkgconf qt5-wayland qt6-wayland
 ```
 ---
 
@@ -58,7 +60,7 @@ git clone https://github.com/<your-username>/swifty.git
 cd swifty
 ./swifty
 ```
-You can also directly download binary if you dont want to clone the repository.
+You can also directly download binary if you don't want to clone the repository.
 ---
 ## 🧩 Hyprland Keybind Setup
 > Add this to your hyprland.conf
@@ -67,7 +69,12 @@ bind = $mainMod+Shift, S, exec, pkill -x swifty || <path/to/swifty-binary>
 ```
 > Make sure you add `pkill -x swifty` otherwise the swifty will always run as background process.
 > You will also need to set windowrules as per your prefrence.
-
+## Window Rules 
+> Add this to your hyprland.conf
+```bash
+windowrulev2 = float, class:^swifty$
+windowrulev2 = move 5.5% 100%-220, class:^swifty$
+```
 ---
 ## 🙌 Credits
 > Original work by [RyuZinOh](https://github.com/RyuZinOh)
